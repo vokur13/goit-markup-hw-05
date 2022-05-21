@@ -605,3 +605,47 @@ address {
   border-left: 1px solid var(--minor-bgc);
   border-right: 1px solid var(--minor-bgc);
 }
+.project-card:hover .prj-dscrpt {
+  transform: translateY(0);
+}
+.prj-thumb {
+  position: relative;
+  overflow: hidden;
+}
+.prj-dscrpt {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+  top: 0;
+  left: 0;
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transform: translateY(100%);
+  transition: transform 250ms ease;
+}
+.prj-dscrpt > p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: calc(28 / 18);
+  color: var(--white-color);
+}
+
+/* Overlay в технике ::before */
+
+/* .prj-thumb::before {
+  content: 'Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.';
+  display: inline-block;
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+  color: yellow;
+  opacity: 0;
+  background-color: tomato;
+} */
+/* .project-card:hover .prj-thumb::before {
+  opacity: 1;
+  transform: translateY(0);
+} */
