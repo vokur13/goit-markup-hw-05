@@ -641,11 +641,13 @@ address {
   width: 100%;
   height: 100%;
   padding: 63px 24px;
+
+  transform: translateY(100%);
+  transition: transform 250ms ease;
   color: yellow;
-  opacity: 0;
+
   background-color: tomato;
-} */
-/* .project-card:hover .prj-thumb::before {
-  opacity: 1;
+}
+.project-card:hover .prj-thumb::before {
   transform: translateY(0);
 } */
