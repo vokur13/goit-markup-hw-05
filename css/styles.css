@@ -8,6 +8,7 @@
 /* Цвет фона Hero */
 /* Белый: rgba(255, 255, 255, 1) */
 /* Цвет фона Footer #2F303A */
+/* Цвет фона Header #fff */
 /* Цвет рамки хедера #ECECEC */
 /* Цвет иконок #AFB1B8 */
 
@@ -23,6 +24,7 @@
   --footer-bgc: #2f303a;
   --white-color: #fff;
   --black-color: #212121;
+  --header-bgc: #fff;
   --header-border-color: #ececec;
   --portfolio-card-box-nmbr-row: 3;
   --item-gap: 30px;
@@ -118,7 +120,15 @@ address {
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  min-height: fit-content;
+  background-color: var(--header-bgc);
+  z-index: 1;
 }
+
 .studio-logo {
   color: var(--black-color);
   font-family: 'Raleway';
@@ -630,24 +640,3 @@ address {
   line-height: calc(28 / 18);
   color: var(--white-color);
 }
-
-/* Overlay в технике ::before */
-
-/* .prj-thumb::before {
-  content: 'Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.';
-  display: inline-block;
-  position: absolute;
-
-  width: 100%;
-  height: 100%;
-  padding: 63px 24px;
-
-  transform: translateY(100%);
-  transition: transform 250ms ease;
-  color: yellow;
-
-  background-color: tomato;
-}
-.project-card:hover .prj-thumb::before {
-  transform: translateY(0);
-} */
