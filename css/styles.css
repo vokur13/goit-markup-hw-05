@@ -337,6 +337,31 @@ address {
 .features.list .title {
   margin-bottom: 10px;
 }
+.prfl-thumb {
+  position: relative;
+}
+.prfl-dscrpt {
+  display: block;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 70px;
+  width: 100%;
+
+  background-color: var(--footer-bgc);
+  opacity: 0.8;
+}
+.prfl-dscrpt > p {
+  display: block;
+  font-weight: 700;
+  line-height: calc(16 / 14);
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--white-color);
+}
 
 /* Our Team */
 
@@ -655,8 +680,7 @@ address {
   width: 100%;
   height: 100%;
 
-  /* background-color: var(--dropbox-bgc); */
-  background-color: rgb(255, 255, 0, 0.2);
+  background-color: var(--dropbox-bgc);
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -669,11 +693,13 @@ address {
   transform: translate(-50%, -50%);
 
   min-width: 528px;
-  min-height: 200px;
-  /* height: 581px; */
+  min-height: 581px;
   padding: 15px;
 
   background-color: var(--modal-bgc);
-
-  outline: 1px solid red;
+}
+.mdl-close {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
