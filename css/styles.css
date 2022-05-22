@@ -158,6 +158,7 @@ address {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .studio-nav:hover,
 .studio-nav:focus {
@@ -193,15 +194,15 @@ address {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  fill: currentColor;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .item.contacts .link-icon {
   margin-right: 10px;
-  fill: currentColor;
 }
 .contacts.pseudo:hover,
 .contacts.pseudo:focus {
   color: var(--accent-color);
-  fill: var(--accent-color);
 }
 
 /* Principal section - Hero */
@@ -433,19 +434,22 @@ address {
 .item.social-netwrk:not(:last-of-type) {
   margin-right: 10px;
 }
-.link.social-netwrk {
+.team .link.social-netwrk {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  background-color: var(--basic-backgroud-color);
   color: var(--icon-color);
   fill: currentColor;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.link.social-netwrk:hover,
-.link.social-netwrk:focus {
-  color: var(--accent-color);
+.team .link.social-netwrk:hover,
+.team .link.social-netwrk:focus {
+  background-color: var(--accent-color);
   fill: var(--white-color);
 }
 .item.social-netwrk:not(:last-of-type) {
@@ -485,6 +489,8 @@ address {
   cursor: pointer;
   color: var(--icon-color);
   fill: currentColor;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-link:hover,
 .clients-link:focus {
@@ -512,6 +518,7 @@ address {
   font-weight: 400;
   line-height: 1.71;
   color: var(--addres-links-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer .studio-logo {
   color: var(--white-color);
@@ -534,6 +541,7 @@ address {
   font-weight: 400;
   line-height: 1.71;
   color: var(--white-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .common.container .address {
   margin-right: 70px;
@@ -547,13 +555,22 @@ address {
 }
 .follow .list.social-netwrk {
   display: flex;
-}
-.follow .list.social-netwrk {
+  padding: 0;
+  width: fit-content;
+  height: 44px;
   margin-top: 20px;
 }
 .follow .link.social-netwrk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
   background-color: #ffffff1a;
   fill: var(--white-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link.social-netwrk:hover,
 .link.social-netwrk:focus {
@@ -604,10 +621,12 @@ address {
   padding: 6px 22px;
   color: var(--title-text-color);
   cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filter-button:hover,
 .filter-button:focus {
-  background: var(--accent-color);
+  background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   color: var(--white-color);
@@ -631,6 +650,7 @@ address {
 }
 .project-card {
   display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .project-card:hover,
 .project-card:focus {
@@ -643,7 +663,8 @@ address {
   border-left: 1px solid var(--minor-bgc);
   border-right: 1px solid var(--minor-bgc);
 }
-.project-card:hover .prj-dscrpt {
+.project-card:hover .prj-dscrpt,
+.project-card:focus .prj-dscrpt {
   transform: translateY(0);
 }
 .prj-thumb {
@@ -696,6 +717,9 @@ address {
   min-height: 581px;
   padding: 15px;
 
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
   background-color: var(--modal-bgc);
 }
 .mdl-close {
