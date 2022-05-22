@@ -119,12 +119,11 @@ address {
 }
 .header {
   padding-top: 24px;
-  padding-bottom: 24px;
+  padding-bottom: 25px;
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
-  min-height: fit-content;
   background-color: var(--header-bgc);
   z-index: 1;
 }
