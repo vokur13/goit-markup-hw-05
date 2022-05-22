@@ -59,14 +59,6 @@
           </li>
         </ul>
       </div>
-
-      <script>
-        const { height: pageHeaderHeight } = document
-          .querySelector('.header')
-          .getBoundingClientRect();
-
-        document.body.style.paddingTop = `${pageHeaderHeight}px`;
-      </script>
     </header>
 
     <main>
@@ -79,7 +71,7 @@
             Эффективные решения <br />
             для вашего бизнеса <br />
           </h1>
-          <button class="order-button" type="button">Заказать услугу</button>
+          <button data-modal-open class="order-button" type="button">Заказать услугу</button>
         </div>
       </section>
 
@@ -527,5 +519,19 @@
         </div>
       </div>
     </footer>
+
+    <!-- Модальное окно -->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita nobis, voluptates
+          commodi vitae laudantium dolor molestiae ad sint eaque velit reprehenderit qui accusantium
+          dolorem temporibus accusamus iste perferendis possimus autem!
+        </p>
+        <button data-modal-close>Закрыть</button>
+      </div>
+    </div>
+    <script src="/js/modal.js"></script>
   </body>
 </html>

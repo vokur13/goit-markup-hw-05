@@ -11,6 +11,8 @@
 /* Цвет фона Header #fff */
 /* Цвет рамки хедера #ECECEC */
 /* Цвет иконок #AFB1B8 */
+/* Dropbox bgc rgba(0, 0, 0, 0.1) */
+/* Modal bgc #FFFFFF */
 
 :root {
   --primary-text-color: #757575;
@@ -35,6 +37,8 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   --team-item-n-row: 4;
   --icon-color: #afb1b8;
+  --dropbox-bgc: rgba(0, 0, 0, 0.1);
+  --modal-bgc: #ffffff;
 }
 /* html {
   box-sizing: border-box;
@@ -631,11 +635,45 @@ address {
   background-color: rgba(33, 150, 243, 0.9);
 
   transform: translateY(100%);
-  transition: transform 250ms ease;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .prj-dscrpt > p {
   font-size: 18px;
   font-weight: 400;
   line-height: calc(28 / 18);
   color: var(--white-color);
+}
+
+/* Модальное окно - Modal Window (?) */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  width: 100%;
+  height: 100%;
+
+  /* background-color: var(--dropbox-bgc); */
+  background-color: rgb(255, 255, 0, 0.2);
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  min-width: 528px;
+  min-height: 200px;
+  /* height: 581px; */
+  padding: 15px;
+
+  background-color: var(--modal-bgc);
+
+  outline: 1px solid red;
 }
