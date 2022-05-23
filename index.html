@@ -16,6 +16,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
+    <!-- Animate.css -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- Потом пользовательсткие стили -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
@@ -37,7 +41,9 @@
             <li class="item-nav">
               <a class="studio-nav link" href="./portfolio.html">Портфолио</a>
             </li>
-            <li class="item-nav"><a class="studio-nav link" href="">Контакты</a></li>
+            <li class="item-nav">
+              <a class="studio-nav link" href="">Контакты</a>
+            </li>
           </ul>
         </nav>
 
@@ -539,13 +545,14 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <p>
-        </p>
         <button data-modal-close class="mdl-close">
           <svg class="link-icon close">
             <use href="./images/svg/close-black.svg#icon-close-black"></use>
           </svg>
         </button>
+        <p>
+        </p>
+        
       </div>
     </div>
     <script src="/js/modal.js"></script>
