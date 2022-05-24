@@ -762,9 +762,10 @@ address {
   min-height: 581px;
   padding: 15px;
 
-  opacity: 1;
+  /* opacity: 1; */
   transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms var(--timing-func), opacity 250ms var(--timing-func);
+  transition: transform 250ms var(--timing-func);
+  /* transition: transform 250ms var(--timing-func), opacity 250ms var(--timing-func); */
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -772,7 +773,7 @@ address {
   background-color: var(--modal-bgc);
 }
 .backdrop.is-hidden .modal {
-  opacity: 0;
+  /* opacity: 0; */
   transform: translate(-50%, -50%) scale(1.2);
 }
 .mdl-close {
