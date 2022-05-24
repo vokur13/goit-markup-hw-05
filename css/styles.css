@@ -734,7 +734,7 @@ address {
   border-right: 1px solid var(--minor-bgc);
 }
 
-/* Модальное окно - Modal Window (?) */
+/* Backdrop Modal*/
 
 .backdrop {
   position: fixed;
