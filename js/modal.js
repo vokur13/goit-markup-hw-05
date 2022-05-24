@@ -24,9 +24,9 @@ document.body.style.paddingTop = `${pageHeaderHeight}px`;
 // Dropbox Modal v. 2.0
 
 const refs = {
-  openModalBtn: document.querySelector('[data-open-modal]'),
-  closeModalBtn: document.querySelector('[data-close-modal]'),
-  backdrop: document.querySelector('[data-backdrop]'),
+  openModalBtn: document.querySelector('[data-modal-open]'),
+  closeModalBtn: document.querySelector('[data-modal-close]'),
+  backdrop: document.querySelector('[data-modal]'),
 };
 
 refs.openModalBtn.addEventListener('click', toggleModal);
