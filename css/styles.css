@@ -169,7 +169,7 @@ address {
 
   position: absolute;
   left: 0;
-  bottom: -32px;
+  bottom: -33px;
 
   width: 100%;
   height: 4px;
@@ -380,26 +380,20 @@ address {
   position: relative;
 }
 .prfl-dscrpt {
-  display: block;
-  padding-top: 27px;
-  padding-bottom: 27px;
   position: absolute;
-  left: 0;
   bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 70px;
   width: 100%;
-
-  background-color: var(--footer-bgc);
-  opacity: 0.8;
-}
-.prfl-dscrpt > p {
-  display: block;
+  padding: 0;
+  margin: 0;
   font-weight: 700;
-  line-height: calc(16 / 14);
-  text-align: center;
   text-transform: uppercase;
-
   color: var(--white-color);
+  background-color: rgba(47, 48, 58, 0.8);
 }
 
 /* Our Team */
